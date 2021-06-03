@@ -1,0 +1,14 @@
+.bkg{
+  background: radial-gradient(#e6e2e2, #ccc3c3);
+}
+
+
+.icon{
+  font-size: 2rem;
+  color : rgb(219, 88, 88)
+}
+.box{
+  border: 1px solid gray;
+  box-shadow: 2px gray;
+  padding: 5px;
+}
