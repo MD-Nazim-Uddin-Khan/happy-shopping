@@ -31,7 +31,7 @@ const AdminPanel = () => {
         //     console.log(p);
         //   }
 
-        fetch('http://localhost:7000/addEmail', {
+        fetch('https://limitless-cliffs-30591.herokuapp.com/addEmail', {
             method: 'POST',
             body: formData
         })

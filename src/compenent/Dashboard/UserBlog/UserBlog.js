@@ -35,7 +35,7 @@ const UserBlog = () => {
         //     console.log(p);
         //   }
 
-        fetch('http://localhost:7000/addBlog', {
+        fetch('https://limitless-cliffs-30591.herokuapp.com/addBlog', {
             method: 'POST',
             body: formData
         })

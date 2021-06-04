@@ -4,7 +4,7 @@ import ProductList from '../ProductList/ProductList';
 const ProductItem = () => {
     const [item, setItem] = useState([])
     useEffect(() => {
-        fetch('http://localhost:7000/products')
+        fetch('https://limitless-cliffs-30591.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setItem(data))
     }, [])

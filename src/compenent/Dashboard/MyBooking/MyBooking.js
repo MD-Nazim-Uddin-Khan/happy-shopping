@@ -16,7 +16,7 @@ const MyBooking = () => {
     const oi = orderInfo.find(pd => pd._id === order)
 
     useEffect(() => {
-        fetch('http://localhost:7000/products')
+        fetch('https://limitless-cliffs-30591.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setOrderInfo(data))
     }, [])
@@ -32,7 +32,7 @@ const MyBooking = () => {
         }
 
         const UserOrder = { ...loggedInUser, ...checkoutList }
-        const url = 'http://localhost:7000/addOrder'
+        const url = 'https://limitless-cliffs-30591.herokuapp.com/addOrder'
         fetch(url, {
             method: 'POST',
             headers: {

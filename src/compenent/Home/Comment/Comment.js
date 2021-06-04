@@ -5,7 +5,7 @@ const Comment = () => {
 
     const [comment, setComment] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:7000/blogItem')
+        fetch('https://limitless-cliffs-30591.herokuapp.com/blogItem')
             .then(res => res.json())
             .then(data => setComment(data))
     }, [])

@@ -27,7 +27,7 @@ const AddProduct = () => {
         formData.append('email', item.email);
         formData.append('price', item.price);
 
-        fetch('http://localhost:7000/addProduct', {
+        fetch('https://limitless-cliffs-30591.herokuapp.com/addProduct', {
             method: 'POST',
             body: formData
         })

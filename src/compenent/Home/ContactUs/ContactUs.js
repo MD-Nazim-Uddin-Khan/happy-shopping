@@ -33,7 +33,7 @@ const ContactUs = () => {
         //     console.log(p);
         //   }
 
-        fetch('http://localhost:7000/addContact', {
+        fetch('https://limitless-cliffs-30591.herokuapp.com/addContact', {
             method: 'POST',
             body: formData
         })

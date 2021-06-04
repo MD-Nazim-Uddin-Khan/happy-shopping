@@ -6,7 +6,7 @@ toast.configure();
 const BlogManageList = ({info}) => {
 
     const deleteBtn = id => {
-        fetch(`http://localhost:7000/delete4/${id}`, {
+        fetch(`https://limitless-cliffs-30591.herokuapp.com/delete4/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

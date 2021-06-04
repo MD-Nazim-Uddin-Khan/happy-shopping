@@ -10,7 +10,7 @@ const ClientContact = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
 
     useEffect(() => {
-        fetch('http://localhost:7000/contactItem')
+        fetch('https://limitless-cliffs-30591.herokuapp.com/contactItem')
             .then(res => res.json())
             .then(data => setContent(data))
     }, [])

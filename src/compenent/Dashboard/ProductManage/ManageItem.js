@@ -10,7 +10,7 @@ const ManageItem = ({info}) => {
     // const { name, price, email, data, img, _id, } = props.info;
 
     const deleteBtn = id => {
-        fetch(`http://localhost:7000/delete/${id}`, {
+        fetch(`https://limitless-cliffs-30591.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

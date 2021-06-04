@@ -7,7 +7,7 @@ const AdminManage = () => {
     const [admin, setAdmin] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:7000/getEmail')
+        fetch('https://limitless-cliffs-30591.herokuapp.com/getEmail')
             .then(res => res.json())
             .then(data => setAdmin(data))
     }, [])

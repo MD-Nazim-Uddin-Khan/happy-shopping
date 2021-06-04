@@ -6,7 +6,7 @@ toast.configure();
 const ContactList = ({ list }) => {
 
     const deleteBtn = id => {
-        fetch(`http://localhost:7000/delete3/${id}`, {
+        fetch(`https://limitless-cliffs-30591.herokuapp.com/delete3/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

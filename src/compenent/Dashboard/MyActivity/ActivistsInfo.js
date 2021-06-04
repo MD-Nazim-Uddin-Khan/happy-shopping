@@ -11,7 +11,7 @@ const ActivistsInfo = (props) => {
     const { name, price, img, _id } = props.info;
 
     const deleteBtn = id => {
-        fetch(`http://localhost:7000/delete2/${id}`, {
+        fetch(`https://limitless-cliffs-30591.herokuapp.com/delete2/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

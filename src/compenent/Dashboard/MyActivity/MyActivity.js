@@ -10,7 +10,7 @@ const MyActivity = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
 
     useEffect(() => {
-        fetch('http://localhost:7000/orderItem')
+        fetch('https://limitless-cliffs-30591.herokuapp.com/orderItem')
             .then(res => res.json())
             .then(data => seyActivity(data))
     }, [])
